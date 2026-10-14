@@ -1,0 +1,61 @@
+# ==============================================================================
+# FASTAPI & PYTHON BACKEND — .GITIGNORE
+# ==============================================================================
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment Variables & Secrets (CRITICAL: Do NOT commit secrets!)
+.env
+.env.local
+.env.*.local
+*.env
+# Keep the example template tracked in git
+!.env.example
+
+# Local SQLite Databases
+*.db
+*.sqlite
+*.sqlite3
+certificates.db
+
+# Storage Directories (Template uploads & Generated certificate ZIPs)
+storage/templates/*
+storage/outputs/*
+!storage/templates/.gitkeep
+!storage/outputs/.gitkeep
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE & Editor Settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing & Coverage Reports
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+logs/
